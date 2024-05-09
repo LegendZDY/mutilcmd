@@ -1,0 +1,20 @@
+app:
+     #远程连接地址
+     host: 106.12.212.30
+     #远程连接账户：work=执行账户
+     user: work
+     #本地密钥文件路径
+     private_key: /media/epibiotek/zdy/.ssh/id_rsa
+     #远程连接密码
+     password: 
+     
+log:
+     level: info  # 日志等级debug
+     root_dir: ./.runtime/logs # 日志根目录
+     filename: app.log # 日志文件名称
+     format: json # 写入格式 可选json
+     show_line: true # 是否显示调用行
+     max_backups: 3 # 旧文件的最大个数
+     max_size: 500 # 日志文件最大大小（MB）
+     max_age: 28 # 旧文件的最大保留天数
+     compress: true # 是否压缩
